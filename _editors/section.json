@@ -1,0 +1,30 @@
+{
+   "title":"Section Page",
+   "description":"The following fields will be used to update the section page metadata",
+   "fields":[
+      {
+         "name":"title",
+         "label":"Title",
+         "type":"text",
+         "required":true
+      },
+      {
+         "name":"header",
+         "type": "text",
+         "label":"Header"
+      },
+      {
+         "name":"variant",
+         "type":"select",
+         "label":"Variant",
+         "options": [
+             "image-left",
+             "image-right",
+             "image-contact",
+         ]
+      }
+   ],
+   "rte": {
+      "document_base_url":"https://www.danklco.com/"
+   }
+}
