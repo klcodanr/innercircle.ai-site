@@ -1,3 +1,5 @@
+---
+---
 /*
  * Start Bootstrap - Landing Page (http://startbootstrap.com/)
  * Copyright 2013-2016 Start Bootstrap
@@ -8,7 +10,7 @@
   font-family: 'ProximaNova';
   font-style: normal;
   font-weight: normal;
-  src: local('ProximaNova'), url('/fonts/Proxima-Nova/ProximaNova-Regular.otf') format("opentype")
+  src: local('ProximaNova'), url('../fonts/Proxima-Nova/ProximaNova-Regular.otf') format("opentype")
 }
 
 body,
@@ -147,7 +149,7 @@ a:hover, a:active, a:focus {
 .banner {
     padding: 100px 0;
     color: #f8f8f8;
-    background: url(http://placehold.it/1900x840) no-repeat center center;
+    background: url({{site.baseurl}}/img/download-bg.jpg) no-repeat center center;
     background-size: cover;
 }
 

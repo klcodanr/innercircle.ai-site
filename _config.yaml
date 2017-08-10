@@ -24,8 +24,8 @@ markdown: rdiscount
 exclude: [README.md, LICENSE, .gitignore]
 
 # Shared configuration values
-phone: 555-555-5555
-email: info@innercircle.io
+phone: +1-204-272-5580
+email: info@innercircle.ai
 iosLink: http://www.apple.com
 androidLink: http://www.google.com
 
