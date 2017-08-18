@@ -33,5 +33,5 @@ androidLink: http://www.google.com
 collections:
   sections:
     output: true
-    permalink: /engagement/:name
+    permalink: /sections/:name
     layout: section
