@@ -36,28 +36,28 @@
                     </div>
                     <hr/>
                     <p class="text-center">
-                        <a href="tel:{{site.phone}}" class="btn btn-default"><em class="fa fa-phone"></em> {{site.phone}}</a>
-                        <a href="mailto:{{site.email}}" class="btn btn-default"><em class="fa fa-envelope"></em> {{site.email}}</a>
+                        <a href="tel:{{site.phone}}" data-action="contact" data-method="phone" class="btn btn-default"><em class="fa fa-phone"></em> {{site.phone}}</a>
+                        <a href="mailto:{{site.email}}" data-action="contact" data-method="email" class="btn btn-default"><em class="fa fa-envelope"></em> {{site.email}}</a>
                     </p>
                     <hr/>
-                    <form accept-charset="UTF-8" enctype="multipart/form-data" method="post" action="#" id="contact-form" title="Contact Me">
+                    <form accept-charset="UTF-8" enctype="multipart/form-data" method="post" data-action="contact" data-method="form" action="https://klcodanric.wufoo.com/forms/z12yoalw0ac6i7v/#public" id="contact-form" title="Contact Me">
                         <div class="form-group">
-                            <label class="control-label" for="Field9">Your Name <span class="text-danger">*</span></label>
-                            <input name="Field9" id="Field9" class="form-control" type="text" maxlength="255" required="required" />
+                            <label class="control-label" for="Field1">Your Name <span class="text-danger">*</span></label>
+                            <input name="Field1" id="Field1" class="form-control" type="text" maxlength="255" required="required" />
                             <span class="help-block hidden">
                                 Please provide your name so I know to whom I'm talking. First name, last name, nickname, doesn't matter.
                             </span>
                         </div>
                         <div class="form-group">
-                            <label class="control-label" for="Field4">Your Email Address <span class="text-danger">*</span></label>
-                            <input name="Field4" id="Field4" class="form-control" type="email" maxlength="255" required="required" />
+                            <label class="control-label" for="Field3">Your Email Address <span class="text-danger">*</span></label>
+                            <input name="Field3" id="Field3" class="form-control" type="email" maxlength="255" required="required" />
                             <span class="help-block hidden">
                                 I need some way to get a hold of you, email please!
                             </span>
                         </div>
                         <div class="form-group">
-                            <label class="control-label" for="Field3">Message <span class="text-danger">*</span></label>
-                            <textarea name="Field3" id="Field3" class="form-control" spellcheck="true" rows="5" cols="50" required="required"></textarea>
+                            <label class="control-label" for="Field6">Message <span class="text-danger">*</span></label>
+                            <textarea name="Field6" id="Field6" class="form-control" spellcheck="true" rows="5" cols="50" required="required"></textarea>
                             <span class="help-block hidden">
                                 What do you want to say? Please provide a message.
                             </span>
@@ -68,11 +68,12 @@
                         <div class="hide">
                             <label for="comment">Do Not Fill This Out</label>
                             <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
-                            <input type="hidden" id="idstamp" name="idstamp" value="HdQpXoverJMLTBVH26DSTHmtR2KA9TL1aX6Iec/0Cn8=">
+                            <input type="hidden" id="idstamp" name="idstamp" value="xIrm0LBRxzMiUg2ubg6a04oLEyUHMEk1jS04/5S9xtU=">
                         </div>
                     </form>
                 </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6 img-middle">
+                    <span class="helper"></span>
                     <img class="img-responsive" src="{{page.image}}" alt="{{page.title}}" />
                 </div>
             </div>
@@ -92,6 +93,7 @@
                     </div>
                 </div>
                 <div class="col-lg-5 col-sm-pull-6 col-sm-6 img-middle">
+                    <span class="helper"></span>
                     <img class="img-responsive" src="{{page.image}}" alt="{{page.title}}" />
                 </div>
             </div>

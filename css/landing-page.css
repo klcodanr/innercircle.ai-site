@@ -72,6 +72,22 @@ a:hover, a:active, a:focus {
     background-size: cover;
 }
 
+.img-middle {
+  text-align: center;
+
+  /* May want to do this if there is risk the container may be narrower than the element inside */
+  white-space: nowrap;
+}
+ 
+/* The ghost, nudged to maintain perfect centering */
+.img-middle:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+}
+
 .intro-message {
     position: relative;
     padding-top: 20%;
