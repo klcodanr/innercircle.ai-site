@@ -68,7 +68,7 @@ a:hover, a:active, a:focus {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(//placehold.it/1900x1267) no-repeat center center;
+    background: url(/img/header.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -132,6 +132,28 @@ a:hover, a:active, a:focus {
     .intro-divider {
         width: 100%;
     }
+}
+
+.lead ol li {
+    padding-top: 1em;
+    width:100%;
+    margin: 1em 0;
+    
+}
+
+.lead ol li:after {
+    border-bottom: 2px solid rgba(0,0,0,0.6);
+    content: '';
+    display: block;
+    height: 100%;
+    width: 60px;
+    padding-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lead ol li:last-child:after{
+  border-bottom: none;
 }
 
 .network-name {
